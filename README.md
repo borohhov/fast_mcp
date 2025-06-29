@@ -3,11 +3,13 @@
 This project demonstrates a simple API in TypeScript using Express and PostgreSQL. It stores prompts and their responses so that previous context can influence future requests.
 
 ## Setup
-1. Install dependencies (requires Node 18 and npm):
+1. Install dependencies (requires Node 18 and npm). The project now relies on the
+   `openai` package:
    ```bash
    npm install
    ```
 2. Provide a `.env` file with a `DATABASE_URL` connection string.
+   Set `OPENAI_API_KEY` in the environment to enable embeddings.
 3. Build and start the server:
    ```bash
    npm run build
